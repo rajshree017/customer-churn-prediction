@@ -1,35 +1,32 @@
-# 📉 Customer Churn Prediction — LightGBM + SHAP
+# Customer Churn Prediction
+Predict which customers will leave using LightGBM with SHAP explainability.
 
-Predict which customers will churn using gradient boosting with full SHAP explainability.
+## 📊 Analyses Performed
+- Feature Engineering (avg monthly charge, contract type)
+- SHAP Summary Plot
+- ROC Curve
+- Confusion Matrix
 
-## 📁 Folder Structure
-```
-5_churn_prediction/
-├── train.py              # Feature engineering, training, SHAP
-├── requirements.txt
-└── README.md
-```
-
-## 🚀 Setup & Run
-```bash
-pip install -r requirements.txt
-
-# Download dataset from Kaggle:
-# https://www.kaggle.com/datasets/blastchar/telco-customer-churn
-# Place CSV in this folder, then:
-python train.py
-```
-
-## 📊 Expected Results
-| Metric | Value |
-|--------|-------|
-| ROC-AUC | ~0.85 |
-| F1 (Churn class) | ~0.62 |
-
-Outputs: `roc_curve.png`, `shap_summary.png`
-
-## 🧠 What You'll Learn
-- Feature engineering for tabular data
+## 🤖 ML Model
 - LightGBM with early stopping
-- Threshold tuning for imbalanced classes
-- SHAP values for model explainability
+- SHAP for feature importance
+- Stratified K-Fold Cross Validation
+- ROC-AUC: ~0.85
+
+## 🛠️ Technologies Used
+- Python
+- Pandas & NumPy
+- LightGBM
+- SHAP
+- Scikit-learn
+- Matplotlib
+
+## ▶️ How to Run
+pip install lightgbm shap pandas scikit-learn matplotlib
+python train.py
+
+## 📁 Output
+roc_curve.png, shap_summary.png saved automatically.
+
+## 👩‍💻 Author
+Rajshree - ML Engineer | Python Developer
